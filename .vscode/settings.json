@@ -3,6 +3,8 @@
     ".sequelizerc": "javascript",
     ".stylelintrc": "json",
     ".prettierrc": "json",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "limits": "cpp",
+    "ostream": "cpp"
   }
 }
