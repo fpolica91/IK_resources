@@ -43,6 +43,7 @@ int max_sum(vector<int> vect, int k)
 }
 
 // clang++ -std=c++11 max_sum.cpp -o max_sum
+// /clang++ -std=c++11 max_sum.cpp -o max_sum
 int main()
 {
   vector<int> original = {2, 1, 5, 1, 3, 2};
