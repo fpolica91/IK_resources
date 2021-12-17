@@ -5,6 +5,9 @@
     ".prettierrc": "json",
     "iostream": "cpp",
     "limits": "cpp",
-    "ostream": "cpp"
-  }
+    "ostream": "cpp",
+    "unordered_map": "cpp",
+    "vector": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "Disabled"
 }
