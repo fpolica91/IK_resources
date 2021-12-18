@@ -22,7 +22,7 @@ vector<double> average_sum(vector<int> vect, int k)
     sum += vect[windowend];
     if (windowend >= k - 1)
     {
-      sums[windowstart] = sum / 5;
+      sums[windowstart] = sum / k;
       // we substract the element from the left;
       sum -= vect[windowstart];
       windowstart++;
