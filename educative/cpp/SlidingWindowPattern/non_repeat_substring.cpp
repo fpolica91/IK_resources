@@ -1,6 +1,5 @@
 /**
  * Solution process 
- * /**
   * 1st iteration -> 0 windowstart 0 windowend, rightchar = a, 1 maxLen, map ={a: 0}
   * 2nd iteration -> 1 windowstart 1 windowend rightchar = a, 1 malen, map = {a: 1} // index of a was changed, skipping a at index 0;
   * 3rd iteration -> 1 windowstart 2 windowend rightchar = b, 2 maxlen, map = {a:1, b :2}
@@ -13,10 +12,10 @@
     // since last index of b was 5, and windowstart was 4 we set windowstart to 5 + 1. 
   * this algorithm returns a result to the questions by shirking the window from the left and keeping track of the length. 
   
- * */
+ **/
 
 /**
- * Problem Statement#
+  Problem Statement#
     Given a string, find the length of the longest substring, which has all distinct characters.
     Example 1:
 
@@ -33,14 +32,14 @@
     Input: String="abccde"
     Output: 3
     Explanation: Longest substrings with distinct characters are "abc" & "cde".
- */
+ **/
 
 #include <iostream>
 #include <string>
 #include <unordered_map>
 using namespace std;
 
-int non_repeat_substring(const string str, int k)
+int non_repeat_substring(const string str)
 {
   int windowstart = 0;
   int maxlen = 0;
@@ -55,8 +54,12 @@ int non_repeat_substring(const string str, int k)
     indexMap[rightChar] = windowend;
     maxlen = max(maxlen, windowend - windowstart + 1);
   }
+  return maxlen;
 }
 
 int main()
 {
+  string str = "aabccbb";
+  int result = non_repeat_substring(str);
+  cout << result << endl;
 }
