@@ -5,6 +5,7 @@ def find_permutation(str, pattern):
   char_frequency = {}
   start = 0
   matches = 0
+
   for chr in pattern:
     if chr not in char_frequency:
       char_frequency[chr] = 0
@@ -18,6 +19,7 @@ def find_permutation(str, pattern):
         matches +=1
     if matches == len(char_frequency):
       return True
+
     
     if end >= len(pattern) -1:
       leftchar = str[start]
