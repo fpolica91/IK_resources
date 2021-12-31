@@ -2,7 +2,8 @@ package main
 import "fmt"
 
 
-
+// return longest substring with all same characters after mutation k characters
+//  aabccbb, 2-> 4 [ccbb]
 
 func length_of_longest_substring(str string, k int) int{
 	var print = fmt.Println
