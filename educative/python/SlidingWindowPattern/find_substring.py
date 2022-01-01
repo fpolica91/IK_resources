@@ -20,7 +20,7 @@ def find_substring(str, pattern):
     rightchar = str[end]
     if rightchar in charmap:
       charmap[rightchar] -=1
-      if charmap[rightchar] == 0:
+      if charmap[rightchar] >= 0:
         matched+=1
 
     while matched == len(pattern):
