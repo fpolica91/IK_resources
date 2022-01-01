@@ -38,4 +38,4 @@ const find_string_anagrams = function (str, pattern) {
 };
 
 console.log(find_string_anagrams("ppqp", "pq"));
-console.log(find_string_anagrams("abbcabc", "abc"));
+// console.log(find_string_anagrams("abbcabc", "abc"));
