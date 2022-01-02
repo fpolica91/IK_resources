@@ -6,7 +6,7 @@ using namespace std;
 string minwindow(const string str, const string pattern)
 {
   unordered_map<char, int> charFrequencyMap;
-  int minlen = str.length();
+  int minlen = str.length() + 1;
   int matches = 0;
   int start = 0;
   int startindex = 0;

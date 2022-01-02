@@ -4,6 +4,7 @@
     ".stylelintrc": "json",
     ".prettierrc": "json",
     "iostream": "cpp",
-    "unordered_map": "cpp"
+    "unordered_map": "cpp",
+    "__hash_table": "cpp"
   }
 }
