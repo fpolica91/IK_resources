@@ -20,6 +20,7 @@ function find_word_concatenation(str, arr) {
       wordIndex = i + j * eachWordLength;
 
       word = str.substring(wordIndex, wordIndex + eachWordLength);
+
       if (!(word in wordFrequency)) {
         break;
       }
@@ -30,7 +31,6 @@ function find_word_concatenation(str, arr) {
       wordsSeen[word]++;
 
       if (wordsSeen[word] > wordFrequency[word] || 0) {
-        console.log(j, "not here");
         break;
       }
 
@@ -42,6 +42,8 @@ function find_word_concatenation(str, arr) {
   return results;
 }
 
-console.log(find_word_concatenation("catfoxcat", ["cat", "fox"]));
+// console.log(find_word_concatenation("catfoxcat", ["cat", "fox"]));
 // console.log(find_word_concatenation("catcatfoxfox", ["cat", "fox"]));
-// console.log(find_word_concatenation("cmapcapmap", ["cap", "map"]));
+console.log(find_word_concatenation("cmapcapmap", ["cap", "map"]));
+
+console.log(find_word_concatenation("barfoothefoobarman", ["foo", "bar"]));

@@ -26,7 +26,8 @@ function solve(str, list) {
   }
   return results;
 }
-
+// aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 console.log(solve("catfoxcat", ["cat", "fox"]));
+
 console.log(solve("catcatfoxfox", ["cat", "fox"]));
-console.log(solve("cmapcapmap", ["cap", "map"]));
+console.log(solve("barfoothefoobarman", ["foo", "bar"]));
