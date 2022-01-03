@@ -37,5 +37,5 @@ const find_string_anagrams = function (str, pattern) {
   return result_indexes;
 };
 
-console.log(find_string_anagrams("ppqp", "pq"));
+// console.log(find_string_anagrams("ppqp", "pq"));
 // console.log(find_string_anagrams("abbcabc", "abc"));
