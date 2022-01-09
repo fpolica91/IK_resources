@@ -9,6 +9,7 @@ def triangle(n):
 
 triangle(5)
 
+# this pattern is printed
 # *****
 #  ****
 #   ***
