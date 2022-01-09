@@ -7,3 +7,10 @@ def triangle(n):
 
 
 triangle(6)
+
+# right triangle
+#  *
+#  *  *
+#  *  *  *
+#  *  *  *  *
+#  *  *  *  *  *

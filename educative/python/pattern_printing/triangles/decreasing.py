@@ -7,3 +7,9 @@ def triangle(n):
 
 
 triangle(5)
+# downward triangle
+#  *  *  *  *  *
+#  *  *  *  *
+#  *  *  *
+#  *  *
+#  *
