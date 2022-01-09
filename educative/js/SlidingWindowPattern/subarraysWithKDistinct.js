@@ -6,9 +6,8 @@ function subarraysWithKDistinct(arr, k) {
   for (let end = 0; end < arr.length; end++) {
     const number = arr[end];
     if (!(number in charmap)) {
-      charmap[number] = 0;
-    }
-    charmap[number]++;
+      charmap[number] = 1;
+    } else charmap[number]++;
 
     while (Object.keys(charmap).length > k) {
       const leftchar = arr[start];
