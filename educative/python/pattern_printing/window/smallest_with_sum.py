@@ -18,7 +18,22 @@ def smallest(s, arr):
     return maxlen
 
 
+def smallest_using_window(s, arr):
+    size = len(arr)
+    sum = 0
+    start = 0
+    minlen = math.inf
+    for i in range(size):
+        sum += arr[i]
+        while sum >= s:
+            minlen = min(minlen, i - start + 1)
+            num = arr[start]
+            sum -= num
+            start += 1
+    return minlen
+
+
 # print(smallest([2, 1, 5, 2, 3, 2], 7))
-print("Smallest subarray length: " + str(smallest(7, [2, 1, 5, 2, 3, 2])))
-print("Smallest subarray length: " + str(smallest(7, [2, 1, 5, 2, 8])))
-print("Smallest subarray length: " + str(smallest(8, [3, 4, 1, 1, 6])))
+print("Smallest subarray length: " + str(smallest_using_window(7, [2, 1, 5, 2, 3, 2])))
+print("Smallest subarray length: " + str(smallest_using_window(7, [2, 1, 5, 2, 8])))
+print("Smallest subarray length: " + str(smallest_using_window(8, [3, 4, 1, 1, 6])))
