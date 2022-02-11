@@ -23,7 +23,7 @@ int max_sum(vector<int> vect, int k)
   // here we will accumulate the sum;
   int sum = 0;
   // the maximum sum we will find
-  int max = 0;
+  int max_sum = 0;
   // the first elmeent of the array, we will increment this value as the window slides
   int windowstart = 0;
   for (int windowend = 0; windowend < vect.size(); windowend++)
